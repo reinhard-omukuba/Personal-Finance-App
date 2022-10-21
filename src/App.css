@@ -1,0 +1,84 @@
+
+
+
+.loginPage{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+
+.loginLeft{
+  height: 100%;
+  width: 50%;
+  background-image: url(./Images/pexels-antoni-shkraba-7163372.jpg);
+  background-size: cover;
+}
+
+
+.loginRight{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+
+.formCont{
+  width: 100%;
+}
+
+.dashboard{
+  display: flex;
+}
+
+.leftNav{
+  width: 20%;
+  height: 100vh;
+  box-shadow: 2px 2px 2px rgb(202, 202, 202);
+
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 20vh;
+  background-color: #f7f7f7;
+}
+
+.workArea{
+  width: 80%;
+  height: 100vh;
+}
+
+
+.navBar{
+  height: 10vh;
+  box-shadow: 1px 1px 5px rgb(202, 202, 202);
+
+}
+
+
+.mainContent{
+  height: 90vh;
+  width: 100%;
+  padding: 20px;
+
+}
+
+
+.profPicCont{
+  height: 150px;
+  width: 150px;
+  background-color: royalblue;
+  border-radius: 50%;
+}
+
+
+.profCont{
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
