@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import LeftNav from '../Components/LeftNav'
 import NavBar from '../Components/NavBar'
 import Button from 'react-bootstrap/Button';
+import {useNavigate} from "react-router-dom";
 
 
 //firebase
 import '../firebase';
 import {db} from '../firebase'
-import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { collection, query, where, getDocs } from "firebase/firestore";
 
 
@@ -15,6 +16,7 @@ function Profile() {
 
 
   const auth = getAuth();
+  const navigate = useNavigate();
   const [userName, setuserName] = useState();
   const [userEmail, setuserEmail] = useState();
 
@@ -41,8 +43,19 @@ function Profile() {
       
     } else {
       // User is signed out
+      navigate("/")
     }
   });
+
+  //signout the user
+  function logOut(){
+    signOut(auth).then(() => {
+      // Sign-out successful.
+    }).catch((error) => {
+      // An error happened.
+      navigate("/")
+    });
+  }
 
 
 
@@ -60,7 +73,7 @@ function Profile() {
                   <div className='profPicCont'></div>
                   <h3>{userName}</h3>
                   <p>{userEmail}</p>
-                  <Button>SignOut</Button>
+                  <Button onClick={logOut}>SignOut</Button>
                 </div>
 
 

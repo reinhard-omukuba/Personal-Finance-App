@@ -1,8 +1,18 @@
 import React from 'react'
 import LeftNav from '../Components/LeftNav'
 import NavBar from '../Components/NavBar'
+import { Button } from 'react-bootstrap'
+import {useNavigate} from "react-router-dom";
 
 function Income() {
+
+  const navigate = useNavigate();
+
+  function goToAddIncome(){
+
+    navigate("/addincome")
+  }
+
   return (
     <div className='dashboard'>
 
@@ -12,7 +22,12 @@ function Income() {
             <NavBar/>
 
             <div className='mainContent'>
+              <div className='headerTop'>
                 <h2>Income</h2>
+                <Button onClick={goToAddIncome}>Add Income</Button>
+
+              </div>
+                
 
 
             </div>

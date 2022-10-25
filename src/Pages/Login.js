@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import {Link , useNavigate} from "react-router-dom";
+import swal from 'sweetalert';
 
 //firebase
 import '../firebase';
@@ -30,6 +31,8 @@ function Login() {
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
+
+      swal("Sign In error!", errorMessage, "warning");
     });
 
   }
