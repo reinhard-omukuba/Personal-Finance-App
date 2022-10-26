@@ -3,6 +3,11 @@ import LeftNav from '../Components/LeftNav'
 import NavBar from '../Components/NavBar'
 
 function Expenses() {
+
+  function goToAddExpense(){
+
+  }
+  
   return (
     <div className='dashboard'>
         <LeftNav/>
@@ -11,7 +16,12 @@ function Expenses() {
             <NavBar/>
 
             <div className='mainContent'>
+                
+                <div className='headerTop'>
                 <h2>Expenses</h2>
+                <Button onClick={goToAddExpense}>Add Expenses</Button>
+
+              </div>
 
 
             </div>
