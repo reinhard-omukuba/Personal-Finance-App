@@ -4,12 +4,18 @@ import NavBar from '../Components/NavBar'
 import { Button } from 'react-bootstrap'
 import {useNavigate} from "react-router-dom";
 
+//firebase
+import '../firebase';
+import {db} from '../firebase'
+
 function Income() {
 
+  //pull income data
+
+
+  //navigate to add income component
   const navigate = useNavigate();
-
   function goToAddIncome(){
-
     navigate("/addincome")
   }
 

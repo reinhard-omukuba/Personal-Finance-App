@@ -1,13 +1,19 @@
 import React from 'react'
 import LeftNav from '../Components/LeftNav'
 import NavBar from '../Components/NavBar'
+import { Button } from 'react-bootstrap'
+import {useNavigate} from "react-router-dom";
 
 function Expenses() {
 
+  const navigate = useNavigate();
+
   function goToAddExpense(){
 
+    navigate("/addexpense")
+
   }
-  
+
   return (
     <div className='dashboard'>
         <LeftNav/>

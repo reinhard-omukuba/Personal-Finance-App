@@ -11,6 +11,7 @@ import Expenses from './Pages/Expenses';
 import Reports from './Pages/Reports';
 import Profile from './Pages/Profile';
 import AddIncome from './Pages/AddIncome';
+import AddExpense from './Pages/AddExpense';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="reports" element={<Reports />} />
         <Route path="profile" element={<Profile />} />
         <Route path="addincome" element={<AddIncome />} />
+        <Route path="addexpense" element={<AddExpense />} />
       </Routes>
     </BrowserRouter>
       
