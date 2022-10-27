@@ -8,7 +8,7 @@ import {useNavigate} from "react-router-dom";
 import '../firebase';
 import {db} from '../firebase'
 import { collection, getDocs } from "firebase/firestore";
-import { async } from '@firebase/util';
+
 
 
 function Income() {
