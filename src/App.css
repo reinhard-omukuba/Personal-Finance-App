@@ -88,3 +88,47 @@
   display: flex;
   justify-content: space-between;
 }
+
+.tabCont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.tabIncome{
+  height: 150px;
+  width: 30%;
+  background-color: tomato;
+  border-radius: 20px;
+  box-shadow: rgba(128, 128, 128, 0.217) 3px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabIncome2{
+  height: 150px;
+  width: 30%;
+  background-color: orange;
+  border-radius: 20px;
+  box-shadow: rgba(128, 128, 128, 0.217) 3px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabIncome3{
+  height: 150px;
+  width: 30%;
+  background-color: green;
+  border-radius: 20px;
+  box-shadow: rgba(128, 128, 128, 0.217) 3px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
